@@ -68,12 +68,6 @@
     border-bottom: 1px solid #000;
     padding-bottom: 10px;
 }
-.container4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-}
 .image-box{
     border: 2px dashed black;
     padding: 10px;
@@ -132,4 +126,39 @@ textarea{
 footer{
     background-color: #f3f3f3;
     Border: 1px solid black;
+}
+
+
+/*Phone Media Query:*/
+@media only screen and (max-width: 539px){
+    h2{
+        font-family: Verdana;
+    }
+    h1{
+        font-family: Impact;
+    }
+    li, ul, td{
+        font-family:Verdana;
+    }
+    table{
+        width: 100%;
+    }
+    div{
+        background-color: antiquewhite;
+    }
+    p{
+        font-family:Cochin;
+    }
+    .container4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
+    button{
+        background-color: rgb(152, 152, 234);
+        font-size: 100%;
+        font-weight: bold;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
 }
