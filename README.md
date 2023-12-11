@@ -1,0 +1,1 @@
+The following project is a showcase of what I've learned after one semester of Web Development.
