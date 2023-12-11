@@ -6,4 +6,4 @@ Link to Figma website wireframe: https://www.figma.com/file/t9avATQqsEyR17eSdXez
 
 My website github link: https://github.com/Chase-Box/Chase-Box.github.io
 
-My live website github link: https://chase-box.github.io/  (I don't know for sure if this will work).
+My live website github link: https://chase-box.github.io/
