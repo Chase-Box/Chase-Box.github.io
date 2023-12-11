@@ -5,3 +5,131 @@
     border: 2px solid black;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
+.container{
+    text-align: center;
+    border: 2px solid #000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.heading{
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.list{
+    list-style: none;
+    padding: 0;
+}
+.list li{
+    margin-bottom: 10px;
+}
+.container2{
+    text-align: center;
+    border: 2px dashed #000;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+.heading2{
+    border: 1px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.list2{
+    list-style: none;
+    padding: 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.list2 li{
+    margin-bottom: 10px;
+}
+.container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #000;
+}
+.central-heading{
+    margin-bottom: 20px;
+}
+.columns{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #000;
+}
+.column{
+    margin: 0 10px;
+}
+.column-heading{
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+}
+.container4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+.image-box{
+    border: 2px dashed black;
+    padding: 10px;
+    text-align: center;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+#description{
+    margin-top: 10px;
+}
+#next-button{
+    margin-top: 20px;
+}
+table{
+    width: 70%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+th{
+    background-color: #CCCCCC;
+    padding: 10px;
+}
+th, td{
+    border: 1px solid #AAAAAA;
+    padding: 10px;
+} 
+th.heading{
+    background-color: #666666;
+    color: #FFFFFF;
+}
+.container5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
+} 
+form{
+    text-align: center;
+}
+input[type="number"] {
+    width: 50px;
+} 
+textarea{
+    width: 300px;
+    height: 100px;
+}
+.hidden{
+    display: none;
+}
+
+footer{
+    background-color: #f3f3f3;
+    Border: 1px solid black;
+}

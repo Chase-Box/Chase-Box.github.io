@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!--The following documents were made by: Chase Box, Mon, Dec 11, 2023-->
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <title>Online Profile</title>
@@ -9,6 +10,149 @@
 
 <body>
     <h1 class="text-center box-shadow">Online Profile</h1>
+
+    <div class="container">
+        <h2 class="heading">My Goals/Plans:</h2>
+        <ul class="list">
+          <li>I plan on getting my bachelors degree in computer science.</li>
+          <li>I want to develop applications, build programs, and create online items using code.</li>
+          <li>I will have to some more difficult math classes, which I fear will be the ultimate difficulties of my goals.</li>
+          <li>I want to gain "fluency" in several coding languages so I can better and more quickly develop programs.</li>
+          <li>Overall, I plan on pursuing using code to develop and getting better and used to such so I can help out and start my own independent projects.</li>
+        </ul>
+      </div>
+      <br>
+      <div class="container">
+        <h2 class="heading">Why?</h2>
+        <ul class="list">
+            <li>Coding is something I find interesting, fun, and different.</li>
+            <li>Web Development has shown me that code can be used in other ways, regarding more UI based implementations.</li>
+            <li>I always wanted to have my main job in the future be development using code. I also always wanted to develop my own seperate programs and applications.</li>
+        </ul>
+      </div>
+      <br>
+      <div class="container2">
+        <h2 class="heading2">Where I am now:</h2>
+        <ul class="lis2t">
+          <li>After this semester, I plan on only having two more years until I'm fully graduated from college.</li>
+          <li>After this semester as well, I will be graduating from OTC.</li>
+          <li>I'm at a current point that I can consistanly make basic programs in Java, C++, and C#.</li>
+        </ul>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="container3">
+        <h1 class="central-heading">Projects I've Made:</h1>
+        <div class="columns">
+          <div class="column">
+            <h2 class="column-heading">Several Websites Like This One</h2>
+            <p>Many of my websites are the best or most professionally designed, but I've learned to navigate and use HTML, CSS, and a small amount of Javascript.</p>
+          </div>
+          <div class="column">
+            <h2 class="column-heading">A School Population Simulation Database (In Java)</h2>
+            <p>This was a project earlier into my Java class. It mainly dealt with establishing variables, generating new variables, and then storing them. It got to a point that there were enough variables all stored in a single place which was supposed to simulate people.</p>
+          </div>
+          <div class="column">
+            <h2 class="column-heading">A Mini RPG Game Battle Simulation (In Java)</h2>
+            <p>I made this as a project to try to challenge myself. It was a mini game where you pick between four characters, each with their own unique skills and powers, and then you fight five enemies in a sequence of waves. Each of the enemies would increase in difficulty as the game progressed. I managed to implement luck-based mechanics into the battles, therefore each and every character could win.</p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h2 class="text-center">Coding Software I've Used So Far:</h2>
+      <div class="container">
+        <div class="image-box">
+          <img src="VisualStudiosCode.jpg" alt="Image 1" id="image">
+          <p id="description">This is Visual Studio Code. This is a open-source code editor that has a lot of flexibility and is very developer and user-friendly.</p>
+        </div>
+        <button id="next-button" onclick="changeImage()">Next Image</button>
+      </div>
+      <script>
+        const images = [
+          "VisualStudiosCode.jpg",
+          "VisualStudio.jpg",
+          "Netbeans.jpg",
+          "Replit.jpg"
+        ];
+        const descriptions = [
+          "This is Visual Studio Code. This is a open-source code editor that has a lot of flexibility and is very developer and user-friendly.",
+          "This is Visual Studio. This was the very first programming software I ever used. It's a IDE that supports many different coding languages, has built in UI support, and overall is very professional.",
+          "This is NetBeans. NetBeans is an IDE that can be complicated at first. But once you use it for a while, you learn that this IDE is actually really bult well. This is a primarily application development based IDE, though it's flexible enough you can do quite a bit with NetBeans. It doesn't have a very friendly user interface though. ",
+          "This is Replit. Replit is an IDE that supports many coding languages, has a very user-friendly interface, and implements ai support so developers can code quicker. This IDE is a pretty good IDE for serious and big projects."
+        ];
+        let currentIndex = 0;
+        function changeImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          const image = document.getElementById("image");
+          const description = document.getElementById("description");
+          image.src = images[currentIndex];
+          description.innerText = descriptions[currentIndex];
+        }
+      </script>
+      <br>
+      <br>
+
+<h1 class="text-center">Classes I Took This Semester:</h1>
+
+<table>
+  <tr>
+    <th class="heading">Course</th>
+    <th class="heading">Professor's Last Name Initial</th>
+    <th class="heading">Location</th>
+  </tr>
+  <tr>
+    <td>C++ Programming 1</td>
+    <td>Prof. W</td>
+    <td>Online</td>
+  </tr>
+  <tr>
+    <td>College Alegbra 1</td>
+    <td>Prof. J</td>
+    <td>Online</td>
+  </tr>
+  <tr>
+    <td>Java Programming 1</td>
+    <td>Prof. L</td>
+    <td>Online</td>
+  </tr>
+  <tr>
+    <td>Website Development 1</td>
+    <td>Prof. L</td>
+    <td>Online</td>
+  </tr>
+</table>
+<div class="container5">
+<form id="feedbackForm" onsubmit="return submitForm(event)">
+    <p>What would you rate my website? (1-10, 1 being the worst and 10 being the best)</p>
+    <input type="number" name="rating" min="1" max="10" required><br><br>
+    
+    <p>Tell Me How I Can Improve:</p>
+    <textarea name="improvements" placeholder="Your Suggestions" required></textarea><br><br>
+    
+    <p>Do you have anything else you'd like the developer of this website to know?</p>
+    <textarea name="comments" placeholder="Additional Comments"></textarea><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+  <p id="successMessage" class="hidden text-center">Thank you. (This was just a test form. Your message won't be seen. Sorry.)</p>
+</div>
+
+<script>
+  function submitForm(event) {
+    event.preventDefault();
+    
+    const feedbackForm = document.getElementById("feedbackForm");
+    feedbackForm.classList.add("hidden");
+    
+    const successMessage = document.getElementById("successMessage");
+    successMessage.classList.remove("hidden");
+    
+    return false;
+  }
+</script>
+
+<footer class="text-center"> -by Chase Box</footer>
 
 </body>
 
